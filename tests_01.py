@@ -1,5 +1,6 @@
 import time
 
+# Average time: 7185 ns
 def isPangram(s):
     letters = list("abcdefghijklmnopqrstuvwxyz")
     s = list(s.lower())
@@ -8,6 +9,7 @@ def isPangram(s):
             return False 
     return True
 
+# Average time: 1844 ns
 def isPangramFast(s):
     return set("abcdefghijklmnopqrstuvwxyz").issubset(set(s.lower()))
 
